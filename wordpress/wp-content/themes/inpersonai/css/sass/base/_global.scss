@@ -1,0 +1,76 @@
+/* GLOBAL */
+
+html, body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: normal;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.container_main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 24px;
+    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
+    @include breakpoint(mobile) {
+        padding: 0px 16px;
+      }
+    @include breakpoint(mobile-small) {
+        padding: 0px 10px;
+      }
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.relative {
+position: relative;
+}
+
+.margin-top-20 {
+margin-top: 20px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.extra-padding-btm__40 {
+    padding-bottom: 40px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.text_container {
+    max-width: 568px;
+    & h2, & h3 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    & p {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* HubSpot Widget */
+
+#hubspot-messages-iframe-container {
+    @include breakpoint(mobile) {
+        z-index: -300000 !important;
+        opacity: 0;
+        pointer-events: none;
+    }
+}

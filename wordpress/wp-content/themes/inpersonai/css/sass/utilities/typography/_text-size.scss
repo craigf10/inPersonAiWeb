@@ -1,0 +1,72 @@
+$desk-ms: 1.333;            // Desktop Multiplier Scale
+$mobile-ms: 1.250;           // Mobile Multiplier Scale
+
+$b: 1em;                    // Baseline font-size
+
+$d-b1:  $b;                  // Body + Small Heading
+$d-b2:  $d-b1*$desk-ms;      // Large Body + Heading
+$d-b3:  $d-b2*$desk-ms;      // Large Heading
+$d-b4:  $d-b3*$desk-ms;      // XL Heading
+$d-b5:  $d-b4*$desk-ms;      // XXL Heading
+$d-b6:  $d-b5*$desk-ms;      // XXXL Heading
+$d-b0:  $d-b1/$desk-ms;      // Body Small + X Small Heading
+$d-b00: $d-b0/$desk-ms;      // Body X Small + XX Small Heading
+
+$m-b1: $b;                   // Body + Small Heading
+$m-b2: $m-b1*$mobile-ms;     // Large Body + Heading
+$m-b3: $m-b2*$mobile-ms;     // Large Heading
+$m-b4: $m-b3*$mobile-ms;     // XL Heading
+$m-b5: $m-b4*$mobile-ms;     // XXL Heading
+$m-b6: $m-b5*$mobile-ms;     // XXXL Heading
+$m-b0:  $m-b1/$mobile-ms;    // Body Small + X Small Heading
+$m-b00: $m-b0/$mobile-ms;    // Body X Small + XX Small Heading
+
+
+@mixin size--base-00 {
+  font-size: $d-b00;
+  @include breakpoint(mobile) {
+    font-size: $m-b00;
+  }
+}
+@mixin size--base-0 {
+  font-size: $d-b0;
+  @include breakpoint(mobile) {
+    font-size: $m-b0;
+  }
+}
+@mixin size--base-1 {
+  font-size: $d-b1;
+  @include breakpoint(mobile) {
+    font-size: $m-b1;
+  }
+}
+@mixin size--base-2 {
+  font-size: $d-b2;
+  @include breakpoint(mobile) {
+    font-size: $m-b2;
+  }
+}
+@mixin size--base-3 {
+  font-size: $d-b3;
+  @include breakpoint(mobile) {
+    font-size: $m-b3;
+  }
+}
+@mixin size--base-4 {
+  font-size: $d-b4;
+  @include breakpoint(mobile) {
+    font-size: $m-b4;
+  }
+}
+@mixin size--base-5 {
+  font-size: $d-b5;
+  @include breakpoint(mobile) {
+    font-size: $m-b5;
+  }
+}
+@mixin size--base-6 {
+  font-size: $d-b6;
+  @include breakpoint(mobile) {
+    font-size: $m-b6;
+  }
+}

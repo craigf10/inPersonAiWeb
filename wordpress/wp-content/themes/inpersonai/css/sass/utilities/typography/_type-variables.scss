@@ -1,0 +1,93 @@
+@import
+"_fonts",
+"_text-size",
+"../color/_colors";
+
+
+// Heading XXLarge
+@mixin heading-xxlarge ($font-color: $black) {
+  @include size--base-6;
+  @include font--primary-bold;
+  line-height: 1.3;
+  color: $font-color;
+}
+
+// Heading XLarge
+@mixin heading-xlarge ($font-color: $black) {
+  @include size--base-5;
+  @include font--primary-bold;
+  line-height: 1.3;
+  color: $font-color;
+}
+
+// Heading Large
+@mixin heading-large ($font-color: $black) {
+  @include size--base-4;
+  @include font--primary-bold;
+  line-height: 1.3;
+  color: $font-color;
+}
+
+// Heading Medium
+@mixin heading-medium ($font-color: $black) {
+  @include size--base-3;
+  @include font--primary-bold;
+  line-height: 1.3;
+  color: $font-color;
+}
+
+// Heading Small
+@mixin heading-small ($font-color: $black) {
+  @include size--base-2;
+  @include font--primary-bold;
+  line-height: 1.3;
+  color: $font-color;
+}
+
+// Heading XSmall
+@mixin heading-xsmall ($font-color: $black) {
+  @include size--base-1;
+  @include font--primary-bold;
+  line-height: 1.3;
+  color: $font-color;
+}
+
+// Heading XXSmall
+@mixin heading-xxsmall ($font-color: $black) {
+  @include size--base-0;
+  @include font--primary-bold;
+  color: $font-color;
+}
+
+// Body Large
+@mixin body-large ($font-color: $black) {
+  @include size--base-2;
+  @include font--primary-regular;
+  line-height: 1.5;
+  color: $font-color;
+}
+
+// Body
+@mixin body ($font-color: $black) {
+  @include size--base-1;
+  @include font--primary-regular;
+  line-height: 1.5;
+  color: $font-color;
+}
+
+// Body Small
+@mixin body-small ($font-color: $black) {
+  @include size--base-0;
+  @include font--primary-regular;
+  line-height: 1.5;
+  color: $font-color;
+}
+
+
+// Body Small
+@mixin body-xsmall ($font-color: $black) {
+  @include size--base-00;
+  @include font--primary-regular;
+  line-height: 1.5;
+  color: $font-color;
+}

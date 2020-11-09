@@ -1,0 +1,67 @@
+/* TYPE STYLES */
+
+.heading-xxlarge {
+    @include heading-xxlarge;
+}
+
+h1 {
+   @include heading-xlarge; 
+}
+
+h2 {
+    @include heading-large; 
+}
+
+
+h3 {
+    @include heading-medium; 
+}
+
+
+h4 {
+    @include heading-small; 
+}
+
+
+h5 {
+    @include heading-xsmall; 
+}
+
+
+h6 {
+    @include heading-xxsmall; 
+}
+
+.body_large {
+    @include body-large;
+}
+
+
+p, ol, ul, li {
+    @include body; 
+}
+
+.body_small {
+    @include body-small;
+}
+
+.body_xsmall {
+    @include body-xsmall;
+}
+
+a {
+    @include body;
+    text-decoration: underline;
+}
+
+button {
+    @include heading-xsmall;
+    & a {
+    @include heading-xsmall;
+    }
+}
+
+label {
+    @include heading-xsmall;
+}
+

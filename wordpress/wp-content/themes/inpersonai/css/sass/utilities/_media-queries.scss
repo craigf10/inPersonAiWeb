@@ -1,0 +1,41 @@
+$screen-xxs-max:  321px;
+$screen-xs-max:   480px;
+$screen-s-max:    640px;
+$screen-md-max:   960px;
+$screen-lg-max:   1040px;
+$screen-xl-max:   1440px;
+$screen-xxl-max:  1640px;
+
+@mixin breakpoint($class) {
+  @if $class == mobile-small {
+    @media (max-width: #{$screen-xxs-max}) { @content; }
+  }
+
+  @else if $class == mobile {
+    @media (max-width: #{$screen-xs-max}) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (max-width: #{$screen-s-max}) { @content; }
+  }
+
+  @else if $class == md {
+    @media (max-width: #{$screen-md-max}) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (max-width: #{$screen-lg-max}) { @content; }
+  }
+
+  @else if $class == xl {
+    @media (min-width: #{$screen-xl-min}) { @content; }
+  }
+
+  @else if $class == xxl {
+    @media (min-width: #{$screen-xxl-min}) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: mobile-small, mobile, sm, md, lg, xl, xxl";
+  }
+}
